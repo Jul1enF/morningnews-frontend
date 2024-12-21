@@ -1,0 +1,59 @@
+.articlesContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.sectionTitle {
+	margin-left: 25px;
+}
+
+.body {
+width : 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 25px;
+}
+
+.articles {
+	width: 50%;
+	margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: rgb(233, 190, 89);
+	margin: 15px 0px 15px 0px
+}
+
+.articleHeader {
+	display: flex;
+	justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.bookmarkIcon {
+	cursor: pointer;
+}
+
+.bookmarkIcon:hover {
+	opacity: 0.6;
+}
+
+.imgContainer {
+    width : 600px;
+    height : 400px;
+    position: relative;
+}
+
+.eyeIcon{
+	margin-left: 1vw;
+}
