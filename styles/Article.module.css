@@ -1,3 +1,7 @@
+
+@media only screen and (min-width: 1150px){
+
+	
 .articles {
 	width: 400px;
 	height: 400px;
@@ -34,4 +38,61 @@
 
 .eyeIcon{
 	margin-left: 1vw;
+}
+}
+
+
+
+
+@media only screen and (max-width: 1150px){
+
+
+	.articles {
+		width: 100vw;
+		height: fit-content;
+		margin: 0px;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+		padding : 0 6vw 5vw;
+		border-bottom: 1px solid  rgb(190, 190, 190);
+	}
+	
+	.divider {
+		width: 100%;
+		height: 1px;
+		background-color: rgb(233, 190, 89);
+		margin: 15px 0px 15px 0px
+	}
+	
+	.imgContainer {
+		width : 80vw;
+		height : 60Vw;
+		position: relative;
+	}
+	
+	.articleHeader {
+		display: flex;
+		justify-content: space-between;
+		height: fit-content;
+	}
+
+	.articleHeader h3{
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	
+	.bookmarkIcon {
+		cursor: pointer;
+	}
+	
+	.bookmarkIcon:hover {
+		opacity: 0.6;
+	}
+	
+	.eyeIcon{
+		margin-left: 1vw;
+	}
 }

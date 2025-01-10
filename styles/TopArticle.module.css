@@ -1,30 +1,99 @@
-.topContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 10px;
-	padding: 20px 0px 20px 0px;
-	cursor: pointer;
+
+@media only screen and (min-width: 1150px){
+
+	.topContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+		padding: 20px 0px 20px 0px;
+		cursor: pointer;
+	}
+	
+	.image {
+		width: 700px;
+	}
+	
+	.topText {
+		position: absolute;
+		background-color: #fff;
+		border: 0.5px rgb(233, 190, 89) solid;
+		width: 550px;
+		text-align: center;
+		padding: 20px;
+	}
+	
+	.bookmarkIcon {
+		cursor: pointer;
+		margin: 5px;
+	}
+	
+	.bookmarkIcon:hover {
+		opacity: 0.6;
+	}
+	
 }
 
-.image {
-	width: 700px;
-}
+@media only screen and (max-width: 1150px){
+	.topContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width : 100vw;
+		height :100vw;
+		margin: 0px;
+		padding: 5vw 0;
+		cursor: pointer;
+		margin-bottom: 40px;
+		border-bottom: 1px solid rgb(190, 190, 190);
 
-.topText {
-	position: absolute;
-	background-color: #fff;
-	border: 0.5px rgb(233, 190, 89) solid;
-	width: 550px;
-	text-align: center;
-	padding: 20px;
-}
+	}
 
-.bookmarkIcon {
-	cursor: pointer;
-	margin: 5px;
-}
+	.imgContainer {
+		width : 100vw;
+		height : 90vw;
+		position: relative;
+		display: flex;
+		justify-content: center;
 
-.bookmarkIcon:hover {
-	opacity: 0.6;
+	}
+	
+	.image {
+		object-fit: cover;
+		object-position: center center;
+		width : 100%;
+		height : 100%;
+	}
+	
+	.topText {
+		position: absolute;
+		background-color: #fff;
+		border: 0.5px rgb(233, 190, 89) solid;
+		width: 75vw;
+		height : 65vw;
+		overflow: hidden;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.topTitle {
+		font-size: 16px;
+	}
+	
+	.bookmarkIcon {
+		cursor: pointer;
+		margin: 5px;
+	}
+	
+	.bookmarkIcon:hover {
+		opacity: 0.6;
+	}
+
+	.description {
+		font-size: 15px;
+		line-height: 15px;
+		max-height:90px;
+		overflow: hidden;
+	}
 }

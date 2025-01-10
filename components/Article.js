@@ -55,7 +55,7 @@ function Article(props) {
 	<h4 style={{ textAlign: "right" }}>- {props.author}</h4>
 	<div className={styles.divider}></div>
 	<div className={styles.imgContainer}>
-	<Image src={props.urlToImage} alt={props.title} layout='fill' objectFit='cover' />
+	<Image src={props.urlToImage} alt={props.title} layout='fill' objectFit='contain' />
 	</div>
 	<p>{props.description}</p>
 </div>

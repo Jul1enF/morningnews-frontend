@@ -1,11 +1,21 @@
-.articlesContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
+
+@media only screen and (min-width: 1150px){
+	.articlesContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	
+	.sectionTitle {
+		margin-left: 25px;
+	}
 }
 
-.sectionTitle {
-	margin-left: 25px;
+
+@media only screen and (max-width: 1150px){
+	.sectionTitle {
+		margin-left: 0px;
+	}
 }

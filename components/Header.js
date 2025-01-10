@@ -97,7 +97,7 @@ function Header() {
 	if (user.token) {
 		userSection = (
 			<div className={styles.logoutSection}>
-				<p>Welcome {user.username} / </p>
+				<p>{user.username}</p>
 				<button onClick={() => handleLogout()}>Logout</button>
 			</div>
 		);
@@ -122,7 +122,7 @@ function Header() {
 				<h1 className={styles.title} onClick={()=>router.push("/")} style={{cursor : "pointer"}}>Morning News</h1>
 				<div className={styles.iconSection}>
 					{userSection}
-					<FontAwesomeIcon icon={faEye} onClick={() => eyeClick()} />
+					<FontAwesomeIcon icon={faEye} onClick={() => eyeClick()} className={styles.eyeIcon} />
 				</div>
 			</div>
 
@@ -131,8 +131,8 @@ function Header() {
 				<Link href="/bookmarks"><span className={styles.link}>Bookmarks</span></Link>
 			</div>
 
-			{isModalVisible && <div id="react-modals">
-				<Modal getContainer="#react-modals" className={styles.modal} visible={isModalVisible} closable={false} footer={null}>
+			{isModalVisible && <div className={styles.modal} id="react-modals">
+				<Modal getContainer="#react-modals" className={styles.modal2} visible={isModalVisible} closable={false} footer={null}>
 					{modalContent}
 				</Modal>
 			</div>}
